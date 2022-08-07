@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        //adjusting action bar of the app
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#FF6200EE"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
         getSupportActionBar().setElevation(0);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
