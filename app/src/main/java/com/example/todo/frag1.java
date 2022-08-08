@@ -77,7 +77,7 @@ public class frag1 extends Fragment {
                     public void onClick(DialogInterface dialog, int which)
                     {
                         //storing task input in a variable then adding it to tasks(LIST)
-                        String task = " "+taskInput.getText().toString();
+                        String task = "•   "+taskInput.getText().toString();
                         tasksPending.add(task);
                         listView.setAdapter(arrayAdapter);  //"re"adapt the task list into listView
 
